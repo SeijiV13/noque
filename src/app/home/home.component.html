@@ -2,6 +2,18 @@
     <Label class="action-bar-title" text="Home"></Label>
 </ActionBar>
 
-<GridLayout class="page">
-    <!-- Add your page content here -->
-</GridLayout>
+<StackLayout class="page">
+    <SearchBar hint="Search hint" [text]="searchPhrase" (submit)="onSearchSubmit($event)"></SearchBar>
+    
+    <Label class="header" text="Food near you"></Label>
+    <ScrollView orientation="horizontal" sdkExampleTitle sdkToggleNavButton>
+            <GridLayout class="m-15" columns="auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto">
+                <StackLayout *ngFor="let data of food_near_you" width="400px" height="200px" class="h3 m-15" col="0">
+                    <Image  [src]="data.image"></Image>
+                    <Label class="title" [text]="data.title"></Label>
+                    <Label class="subtitle" [text]="data.location"></Label>
+                </StackLayout>
+               
+            </GridLayout>
+    </ScrollView>
+</StackLayout>ES

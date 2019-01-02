@@ -1,0 +1,37 @@
+/* Add mobile styles for the component here.  */
+ FlexboxLayout {
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-image: url("~/app/assets/images/login-background.jpg");
+ }
+
+  Image {
+    margin-bottom: 20;
+    height: 70;
+  }
+  TextField {
+    margin-bottom: 10;
+  }
+
+  Button{
+      margin-bottom: 1;
+  }
+
+  .btn-primary {
+    background-color: rgb(243, 95, 9);
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .btn-secondary {
+    background-color: rgb(53, 51, 50);
+    margin-left: 0;
+    margin-right: 0;
+    color: white;
+  }
+  
+  TextField {
+    placeholder-color: #C4AFB4;
+    color: black;
+  }

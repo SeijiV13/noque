@@ -1,0 +1,12 @@
+<ActionBar title="Noque"></ActionBar>
+<FlexboxLayout>
+    <StackLayout class="login-box">
+        <TextField hint="Email Address" keyboardType="email"
+           autocorrect="false" autocapitalizationType="none"></TextField>
+        <TextField hint="Password" secure="true"></TextField>
+        
+        <!-- BUTTONS -->
+        <Button (tap)="onLogin()" text="Sign in" class="btn btn-primary"></Button>
+        <Button class="btn btn-secondary" text="Create new account"></Button>
+    </StackLayout>
+</FlexboxLayout>
